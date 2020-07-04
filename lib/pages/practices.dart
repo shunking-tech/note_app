@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-/* ↓↓↓追記↓↓↓ */
 import 'package:note_app/pages/edit_practice.dart'; // 練習編集画面を読み込み
-/* ↑↑↑追記↑↑↑ */
 
 class Practices extends StatefulWidget {
   @override
@@ -15,7 +13,6 @@ class _PracticesState extends State<Practices> {
       body: Center(
         child: Text("練習一覧画面"),
       ),
-      /* ↓↓↓追記↓↓↓ */
       floatingActionButton: FloatingActionButton( // 画面右下にボタンを設置します
         child: Icon(Icons.add), //ボタンの見た目を「＋」アイコンに設定します
         onPressed: () { // ボタンを押した時の処理を記述します
@@ -25,7 +22,6 @@ class _PracticesState extends State<Practices> {
           );
         },
       ),
-      /* ↑↑↑追記↑↑↑ */
     );
   }
 }
